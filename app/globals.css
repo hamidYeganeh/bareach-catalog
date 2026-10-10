@@ -37,3 +37,21 @@ body {
   height: 100%;
   object-fit: contain;
 }
+
+@media (max-width: 767px) and (orientation: portrait) {
+  .catalog-slide {
+    position: relative;
+    overflow: hidden;
+  }
+
+  .catalog-image {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 100dvh;
+    max-width: none;
+    height: 100vw;
+    object-fit: fill;
+    transform: translate(-50%, -50%) rotate(90deg);
+  }
+}
